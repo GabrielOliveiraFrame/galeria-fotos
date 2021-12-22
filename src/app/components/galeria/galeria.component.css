@@ -1,0 +1,26 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.imgBox
+{
+  max-width: 500px;
+}
+
+.imgBox img{
+  width: 100%;
+}
+
+.btnGroup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnGroup p{
+  margin-right: 10px;
+}

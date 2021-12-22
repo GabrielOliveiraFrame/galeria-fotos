@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>{{titulo}}</h2>
+
+  <div *ngIf="fotos">
+    <div class="imgBox">
+      <img [src]="fotos[index]" alt="foto da galeria">
+    </div>
+
+    <div class="btnGroup">
+      <p>Foto {{index + 1}} de {{fotos.length}}</p>
+      <div>
+        <button [disabled]="index == 0" (click)="firstImg()"> |< </button>
+        <button [disabled]="index == 0" (click)="prevImg()"> < </button>
+        <button [disabled]="index == fotos.length - 1" (click)="nextImg()"> > </button>
+        <button [disabled]="index == fotos.length - 1" (click)="lastImg()"> >| </button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!fotos">
+    <p>Nenhuma foto encontrada!</p>
+  </div>
+</div>
+
+
